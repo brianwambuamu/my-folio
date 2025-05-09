@@ -319,15 +319,116 @@ section{
     background-color: #e3a324;
 }
 
-.skills .content .col-right .bar .python::before{
-    width: 85%;
-    background-color: blue;
+.skills .content .col-right .bar .ruby::before{
+    width: 75%;
+    background-color: rgb(119, 11, 11);
 }
 
-.skills .content .col-right .bar .php::before{
+.skills .content .col-right .bar .python::before{
     width: 65%;
-    background-color: #6d7eb8;
+    background-color: #3a6cf4;
 }
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.title p{
+    font-size: 1em;
+    width: 80%;
+    text-align: center;
+}
+
+.services .content .card{
+    background-color: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    transition: 0.3s linear;
+}
+
+.services .content .card .service-icon{
+    color: #3a6cf4;
+    font-size: 8rem;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.services .content .card .info{
+    text-align: center;
+}
+
+.services .content .card .info h3{
+    color: #3a6cf4;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px;
+    transition: 0.3s linear;
+    
+}
+
+.services .content .card:hover{
+    background-color: #070f27;
+    color: white;
+}
+
+.services .content .card:hover .service-icon,
+.services .content .card:hover .info h3
+{
+    transform: translateY(-10px);
+    color: white;
+}
+/* Work */
+
+.work{
+    background-color: #000016;
+}
+
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.work .content .card{
+    width: 340px;
+    margin: 15px;
+}
+
+.work .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.work .content .card .card-img img:hover{
+    transform: scale(1.2);
+}
+
 
 .contact .content{
     display: flex;
@@ -496,5 +597,20 @@ section{
     .about .content .col-right{
         margin-top: 40px;
     }
-    
+    .skills .content{
+        flex-direction: column;
+    }
+
+    .skills .content .column{
+        position: relative;
+        width: 100%;
+    }
+
+    .skills .content .col-right{
+        margin-top: 40px;
+    }
+ 
+    .contact-form{
+        padding: 35px 40px;
+      }
 }
