@@ -26,4 +26,6 @@ window.addEventListener("scroll", function(){
                 navigation.classList.remove("active")
             })
         })
-       
+       document.querySelector("image/work1.jpg").addEventListener("click", () => {
+      window.location.href = "http://google.com";
+});
