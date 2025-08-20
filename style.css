@@ -66,9 +66,7 @@ section{
 .main{
     position: relative;
     width: 100%;
-    height: 100lvh;
-    /* height: 100svh; */
-    /* height: 100dvh; */
+    height: 100svh;
     display: flex;
     align-items: center;
     background-image: url(image/pic.jpg);
@@ -206,6 +204,8 @@ section{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    background-color: #F9F4ED;
+
 }
 
 .about .content .col-left{
@@ -389,47 +389,6 @@ section{
     transform: translateY(-10px);
     color: white;
 }
-/* Work */
-
-.work{
-    background-color: #000016;
-}
-
-.work .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.work .content .card{
-    width: 340px;
-    margin: 15px;
-}
-
-.work .content .card .card-img{
-    position: relative;
-    width: 100%;
-    height: 260px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.work .content .card .card-img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.3s linear;
-}
-
-.work .content .card .card-img img:hover{
-    transform: scale(1.2);
-}
 
 
 .contact .content{
@@ -504,6 +463,8 @@ section{
   }
   .cultures {
       padding: 5rem 0;
+          background-color: #F9F4ED;
+
     }
     
     .cultures-grid {
